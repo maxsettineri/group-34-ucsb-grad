@@ -1,0 +1,21 @@
+---
+title: "Group 34 UCSB domestic grad enrollment"
+author: "Max Settineri" "Connor Jainese"
+date: "11/15/2021"
+output: html_document
+---
+
+### Setup
+```{r setup, include=TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+
+# Attach packages
+library(tidyverse)
+library(here)
+```
+
+#### Reading in the data
+```{r}
+ucsb_grad <- read_csv(here("data", "ucsb_grad_data.csv"))
+```
+
