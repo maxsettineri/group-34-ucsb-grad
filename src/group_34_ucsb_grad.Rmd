@@ -1,6 +1,6 @@
 ---
 title: "Group 34 UCSB domestic grad enrollment"
-author: "Max Settineri" "Connor Jainese"
+author: "Max Settineri" "Conner Jainese"
 date: "11/15/2021"
 output: html_document
 ---
@@ -18,4 +18,16 @@ library(here)
 ```{r}
 ucsb_grad <- read_csv(here("data", "ucsb_grad_data.csv"))
 ```
+
+### Data Visualization
+```{r}
+#Setup ggplot with data, x, and y axis
+ggplot(data = ucsb_grad, 
+       aes(y = domestic_enrollment, 
+           x = year_abbr, fill = ethnicity)) +
+  #select plot type
+  geom_col()
+```
+
+
 
