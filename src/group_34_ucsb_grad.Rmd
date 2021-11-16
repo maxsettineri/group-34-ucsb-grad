@@ -28,8 +28,11 @@ ggplot(data = ucsb_grad,
   #select plot type
   geom_col(position = "fill") +
   labs(x = "Year",
-       y = "Proportion of UCSB Graduate Enrollment")
+       y = "Proportion of UCSB Graduate Enrollment", 
+       title = "Ethnicity Composition of UCSB Graduate Enrollment") +
+  theme_minimal()
 ```
 
+**Figure 1.** The relative ethnicity composition for UCSB graduate enrollment from 2008 to 2019. 
 
 
